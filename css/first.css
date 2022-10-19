@@ -1,0 +1,132 @@
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: rgb(233, 233, 233);
+}
+#divid{
+    background-color: black;
+    color: white;
+    padding: 8px 25px;
+    /* border-radius: 23px; */
+    position: sticky;
+    top: 72px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#divid a{
+    padding: 6px 12px;
+    text-decoration: none;
+    color: white;
+}
+#divid a:hover{
+    background-color: rgb(77, 77, 77);
+}
+#divid input{
+    float: right;
+    padding: 3px 20px;
+    margin: auto 35px;
+    border-radius: 8px;
+    border: none;
+}
+#divid em{
+    float: right;
+    margin: auto 15px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+}
+#imgid{
+    /* background-color: rgb(255 255 255); */
+    height: 70px;
+    /* border-radius: 8px; */
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#imgid img{
+    width: 100px;
+    position: relative;
+    top: 5px;
+    /* margin: -5px; */
+}
+#imgid h1{
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    bottom: 14px;
+    display: inline;
+    width: 246px;
+    left: 4px;
+    font-size: 35px;
+    
+}
+#divid2{
+    /* border: 2px solid red; */
+    padding: 10px 23px;
+    margin: 8px 44px;
+    border-radius: 11px;
+    /* display: inline; */
+    /* width: auto; */
+    height: 370px;
+}
+#divid2 img{
+    float: right;
+    overflow: -x;
+    height: 300px;
+    width: 450px;
+    border-radius: 11px;
+    clear: both;
+}
+/* #divid2 p{
+    float: left;
+} */
+#imgid a{
+    float: right;
+    position: relative;
+    top: 7px;
+    background-color: rgb(0, 255, 0);
+    padding: 1px 22px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+#imgid button{
+    float: right;
+    position: relative;
+    top: 38px;
+    right: 83pX;
+    background-color: rgb(255, 0, 255);
+    border: none;
+    padding: 4px 7px;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+}
+#imgid a:hover{
+    background-color: rgb(154, 243, 146);
+}
+#imgid button:hover{
+    background-color: rgb(255, 140, 255);
+}
+#imgid a:visited{
+    background-color: rgb(251, 255, 0);
+}
+#imgid button:visited{
+    background-color: rgb(251, 255, 0);
+}
+#imgid a:active{
+    color: black;
+    background-color: rgb(255, 81, 0);
+}
+#imgid button:active{
+    background-color: rgb(255, 81, 0);
+}
+#divid2 p{
+    font-size: 21px;
+}
+#divid2 h2{
+    font-size: 31px;
+}
+
+

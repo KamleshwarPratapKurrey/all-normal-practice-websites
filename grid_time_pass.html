@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web site using grid</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'h1 h1 h1 h1'
+            'section section section aside'
+            'footer footer footer footer' ;
+        }
+        #nav{
+            /* border: 2px solid white; */
+            color: white;
+            grid-area: navbar;
+            text-align: center;
+        }
+        #nav img{
+            width: 5rem;
+        }
+        #nav ul{
+            margin: 16px 0px;
+            padding: 4px 8px;
+        }
+        #nav ul li{
+            display: inline;
+            padding: 4px 10px;
+        }
+        #nav ul li a{
+            font-family: 'Titillium Web', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: white;
+            padding: 3px 10px;
+        }
+        #nav ul li a:active{
+            background-color: rgb(90, 90, 90);
+            border-radius: 1px;
+        }
+        #nav ul li a:hover{
+            border: 0.1px solid white;
+            border-radius: 2px;
+        }
+        #h1{
+            font-family: 'Titillium Web', sans-serif;
+            grid-area: h1;
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 0px; /* margin: top right bottom left */
+            margin-top: 3rem;
+            color: white;
+        }
+        .h1C{
+            font-size: 2rem;
+        }
+        .paraC{
+            font-size: 1.5rem;
+        }
+        #secn{
+            font-family: 'Titillium Web', sans-serif;
+            /* border: 1px solid white; */
+            /* text-align: center; */
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            grid-area: section;
+        }
+        #aside{
+            font-family: 'Titillium Web', sans-serif;
+            /* border: 1px solid white; */
+            /* text-align: center; */
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            grid-area: aside;
+        }
+        #footer{
+            border: 1px solid white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            background-color: black;
+            color: white;
+            grid-area: footer;
+        }
+        
+        @media only screen and (max-width: 660px){
+            body{
+                /* background-color: blue; */
+            }
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'h1 h1 h1 h1'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+            }
+            #nav ul{
+                margin: 14px 0px;
+                padding: 2px;
+            }
+            #nav ul li a{
+            padding: 2px 6px;
+            font-size: 1.1rem;          
+            }
+            #nav img{
+                width: 3.3rem;
+            }
+            #nav ul li{
+                display: inline;
+                padding: 2px 4px;
+            }
+            #h1{
+                font-size: 1.4rem;
+                /* margin: 4px; */
+            }
+            .h1C{
+                font-size: 1rem;
+            }
+            .paraC{
+                font-size: 0.88rem;
+            }
+            #footer{
+                font-size: 1rem;
+            }
+        }
+        @media only screen and (max-width: 470px){
+            body{
+                /* background-color: red; */
+            }
+            #nav ul li a{
+                font-size: 0.85rem;
+                padding: 1px 2px;
+            }
+            #nav ul{
+                padding: 1px 4px;
+                margin: 10px 0px;
+            }
+            #nav img{
+                width: 2.30rem;
+                margin: 0px;
+            }
+            #h1{
+                font-size: 1rem;
+                margin: 0px;
+                margin-top: 1rem;
+            }
+            .h1C{
+                font-size: 0.94rem;
+            }
+            .paraC{
+                font-size: 0.84rem;
+            }
+            #footer{
+                font-size: 0.88rem;
+            }
+        }
+        @media (max-width:310){
+            body{
+                /* background-color: pink; */
+            }
+            #nav ul li a{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav id="nav">
+        <img src="./Project-1/img/navLogo.png" alt="Image loading..">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+    <h1 id="h1">Biography</h1>
+    <section id="secn">
+        <h1 class="h1C">Behaviour</h1>
+        <p id="para" class="paraC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tenetur alias unde voluptas minus, fugit fugiat similique, omnis maxime, blanditiis iusto consectetur laudantium accusamus quos molestiae architecto sequi labore rerum rem nulla. Rerum cum nisi incidunt eveniet accusamus alias atque ipsam dolorum fugit provident? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sit eius laboriosam laborum deserunt? Rem quis possimus aliquid, eum quidem omnis, quia, quae dolorum error dolore aliquam commodi provident officia ut! Illum aspernatur natus, ad ducimus illo perspiciatis vel sapiente repellendus ab, aliquam at iste esse ut reprehenderit exercitationem soluta quos eaque veritatis recusandae placeat maiores! Magni dolores assumenda laborum, possimus voluptatibus corrupti architecto, officiis obcaecati doloremque natus nihil adipisci provident consequuntur nam nostrum et libero sint delectus dignissimos nobis mollitia eveniet itaque error? Aspernatur facilis natus labore culpa maiores enim! Praesentium sapiente qui fuga quidem recusandae sequi sed ex voluptates? Modi ipsum saepe hic dicta repellendus. Nisi, doloremque quia est fugiat soluta blanditiis harum quibusdam commodi expedita iusto unde incidunt consequuntur ipsum. Itaque iste sequi voluptates asperiores beatae numquam ducimus quasi doloribus! Dicta consequuntur dolorum tempora eum laudantium unde dolore nesciunt. Facilis magnam eos omnis tempora alias sequi perspiciatis sunt quas praesentium beatae, excepturi totam et, sed quo eaque aut neque accusamus, debitis ex. Magni illum alias, ipsa facere atque vero? Dolore tempora error repellat fuga, ratione repudiandae! Explicabo repellat quaerat rerum, aspernatur magnam at eligendi facere, eveniet molestiae, nisi sed aliquid hic sunt praesentium fuga ipsa saepe alias?</p>
+    </section>
+    <aside id="aside">
+        <h1 class="h1C">Life/Destiny</h1>
+        <p id="para2" class="paraC">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum accusamus eum illo provident quod commodi, nulla similique, deleniti cum, id veniam minima. Fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur animi culpa reprehenderit, eligendi, ex dolorum possimus voluptates quas laudantium similique illo quaerat aperiam mollitia nemo laboriosam aut officia nobis iure a porro sequi ipsa eveniet sapiente amet. Architecto placeat temporibus nobis laboriosam hic rerum blanditiis adipisci autem quam cumque. Numquam veritatis, dignissimos rem qui sapiente sed nulla, atque ad natus repellat inventore suscipit, sit architecto culpa quis repellendus enim obcaecati beatae. Iure quis voluptates quo non reprehenderit nobis tempore omnis obcaecati. Libero nam nostrum fuga quidem ratione sit id, nemo adipisci odit repellat, temporibus dolores non at illum cupiditate dolorem.</p>
+    </aside>
+    <footer id="footer">
+        Copyrights &copy; 2021 www.kpk.com. Allrights reserved.
+    </footer>
+    </div>
+</body>
+</html>

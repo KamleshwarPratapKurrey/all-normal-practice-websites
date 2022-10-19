@@ -1,0 +1,53 @@
+body{
+    background: url('White\ girl.jpg');
+
+}
+.container{
+    display: flex;
+    height: 68px;
+    border: 2px solid green;
+    justify-content: center;
+    flex-flow: row wrap;
+    border: none;
+}
+.container .box{
+    margin: 12px;
+    padding: 4px 8px;
+    font-size: 22px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(182, 178, 178);    
+}
+.container .box:hover{
+    background-color: rgb(138, 135, 135);
+    text-decoration: underline;
+}
+.container img{
+    border-radius: 38px;
+    position: absolute;
+    right: 89%;
+    filter: invert(100%);
+}
+.container button{
+    position: absolute;
+    right: 18px;
+    top: 26px;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    color: rgb(182, 178, 178); 
+    background-color: #6d6d6b; 
+    
+}
+.container button:hover{
+    background-color: rgb(138, 135, 135);
+    cursor: pointer;
+}
+.container2{
+    display: flex;
+    margin: 38px 33px;
+    flex-flow: column wrap;
+}
+.container2 .box2{
+
+}
